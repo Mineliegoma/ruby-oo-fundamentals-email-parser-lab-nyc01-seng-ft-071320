@@ -4,12 +4,14 @@ require'pry'
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 class EmailAddressParser
-  attr_accessor :parse
+  
    def initialize parse
      @parse=parse 
    end
    def parse 
      @parse.delete(",").split(" ").uniq
    end
+   
+   
    
  end
