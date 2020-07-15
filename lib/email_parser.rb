@@ -11,7 +11,7 @@ class EmailAddressParser
    def parse 
      @parse.delete(",").split(" ").uniq
    end
-   
+   attr_accessor :parse
    
    
  end
